@@ -1,0 +1,482 @@
+@import url("reset.css");
+
+/* Helpers
+============================================================ */
+.ir { display:block; text-indent:-999em; overflow:hidden; background-repeat: no-repeat; }
+.hidden { display:none; visibility:hidden; } 
+.visuallyhidden { position:absolute !important; clip: rect(1px 1px 1px 1px); clip: rect(1px, 1px, 1px, 1px); }
+.invisible { visibility: hidden; }
+.clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+.clearfix { display: inline-block; }
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+
+.clear{clear:both;}
+.alignleft{text-align:left;}
+.alignright{text-align:right;}
+.aligncenter{text-align:center;}
+.floatleft{float:left;}
+.floatright{float:right;}
+.floatcenter{
+  float:none !important;
+  margin-left:auto !important;
+  margin-right:auto !important;
+}
+
+/* General
+============================================================ */
+@font-face {
+  font-family: 'SpringLPStdRegular';
+  src: url('fonts/springlpstd-webfont.eot?') format('eot'),
+       url('fonts/springlpstd-webfont.woff') format('woff'),
+       url('fonts/springlpstd-webfont.ttf') format('truetype'),
+       url('fonts/springlpstd-webfont.svg#webfont2aZDQh8u') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+a{color:#119DC4;}
+
+/* Body
+============================================================ */
+body{
+  background:#FFF url(../images/bg/bg.jpg) no-repeat top;
+  color:#ACACB1;
+  font-family:Arial, Helvetica, sans-serif;
+  font-size:14px; 
+}
+
+#wrapper{
+  margin:0 auto;
+  width:930px;
+}
+
+/* Header
+============================================================ */
+#header{
+  height:100px;
+  padding-top:40px;
+}
+
+#logo{
+  float:left;
+  margin-left:50px;
+}
+
+#header nav{
+  float:right;
+  padding-top:15px;
+}
+
+#header nav li{
+  float:left;
+  font-family:'SpringLPStdRegular', Georgia, Times, Times New Roman, serif;
+  font-size:22px;
+  font-weight:normal;
+  margin-left:20px;
+  text-shadow:0 1px #EEE;
+}
+
+#header nav li a{
+  color:#416DA6;
+  padding:0 5px 20px;
+  text-decoration:none;
+}
+
+#header nav li.active a,
+#header nav a:hover,
+#footer nav a:hover{
+  color:#003374;
+}
+
+#header nav li#home.active a{background:url(../images/bg/home-hover.png) no-repeat 0 50%;}
+#header nav li#fragancias.active a{background:url(../images/bg/fragancias-hover.png) no-repeat 0 50%;}
+#header nav li#products.active a{background:url(../images/bg/products-hover.png) no-repeat 0 50%;}
+#header nav li#hogar.active a{background:url(../images/bg/hogar-hover.png) no-repeat 0 50%;}
+#header nav li#articulos.active a{background:url(../images/bg/articulos-hover.png) no-repeat 10px 50%;}
+#header nav li#contactanos.active a{background:url(../images/bg/contactanos-hover.png) no-repeat 10px 50%;}
+
+/* Content
+============================================================ */
+#content{
+  clear:left;
+}
+
+h2{
+  color:#003374;
+  font-family:'SpringLPStdRegular', Georgia, Times, Times New Roman, serif;
+  font-size:35px;
+  font-weight:normal;
+}
+
+h3{
+  color:#0096D8;
+  font-family:'SpringLPStdRegular', Georgia, Times, Times New Roman, serif;
+  font-size:24px;
+  font-weight:normal;
+  margin-bottom:15px;
+}
+
+.decoration{
+  background:url(../images/bg/heading-decoration.png) no-repeat center;
+  margin-bottom:10px;
+  text-align:center;
+}
+
+.image-grid li{
+  float:left;
+  height:400px;
+  text-align:center;
+  width:50%;
+}
+
+.image-grid li img{
+  max-width:100%;
+}
+
+#main{
+  float:left;
+  margin-top:40px;
+  width:620px;
+}
+
+/* Posts
+============================================================ */
+.post{
+  border-bottom:1px dotted #C0C0C0;
+  clear:both;
+  margin-bottom:30px;
+  overflow:hidden;
+  padding-bottom:20px;
+}
+
+.post .date{
+  background:url(../images/bg/date.png) no-repeat top;
+  color:#FFF;
+  float:left;
+  height:58px;
+  padding-top:18px;
+  text-align:center;
+  width:120px;
+}
+
+.post .date span{
+  display:block;
+  font-family:'SpringLPStdRegular', Georgia, Times, Times New Roman, serif;
+  font-size:30px;
+  font-weight:normal;
+  margin-top:-10px;
+}
+
+.post .content{
+  float:right;
+  font-size:14px;
+  line-height:1.3;
+  width:485px;
+}
+
+.post h2{
+  color:#037;
+  font-family:Arial, Helvetica, sans-serif;
+  font-size:14px;
+  font-weight:bold;
+  margin-bottom:10px;
+}
+
+.post p{margin-bottom:10px;}
+
+.post .meta{
+  color:#333;
+  font-size:11px;
+  margin-top:20px;
+}
+
+.post .meta a,
+.post .meta span{
+  display:inline-block;
+  text-decoration:none;
+}
+
+.post .meta .comments{
+  background:url(../images/bg/comments.png) no-repeat;
+  line-height:20px;
+  text-align:center;
+  width:30px;
+}
+
+.post .meta a{
+  border-right:1px solid #CCC;
+  margin-right:10px;
+  padding-right:10px;
+}
+
+/* Sliders
+============================================================ */
+.slider-container{
+	display:none;
+  overflow:hidden;
+	position:relative;
+}
+
+.slider-container .slide{
+  display:block;
+  position:relative;
+}
+
+.slider-container .content{
+  left:0;
+  position:absolute;
+  top:0;
+}
+
+#main-slider .slider-container{width:930px;}
+#main-slider .slider-container .slide{
+  height:487px;
+  width:930px;
+}
+
+#second-slider .slider-container{width:425px;}
+#second-slider .slider-container .slide{
+  height:180px;
+  width:425px;
+}
+
+#third-slider .slider-container{width:425px;}
+#third-slider .slider-container .slide{
+  height:180px;
+  width:425px;
+}
+
+#third-slider img{
+  float:left;
+  margin-right:20px;
+}
+
+#third-slider p{
+ 
+}
+
+#slides .next,#slides .prev {
+	position:absolute;
+	top:107px;
+	left:-39px;
+	width:24px;
+	height:43px;
+	display:block;
+	z-index:101;
+}
+
+#slides .next {
+	left:585px;
+}
+
+.pagination {
+	margin:26px auto 0;
+	width:100px;
+}
+
+.pagination li {
+	float:left;
+	margin:0 1px;
+	list-style:none;
+}
+
+.pagination li a {
+	display:block;
+	width:12px;
+	height:0;
+	padding-top:12px;
+	background-image:url(../img/pagination.png);
+	background-position:0 0;
+	float:left;
+	overflow:hidden;
+}
+
+.pagination li.current a {
+	background-position:0 -12px;
+}
+
+.slide1{background:url(../images/slides/slide1.png) no-repeat center;}
+
+.slide1 .content{
+  color:#688B32;
+  font-size:14px;
+  left:500px;
+  top:160px;
+  width:285px;
+}
+
+.slide1 h2{
+  color:#477210;
+  font-size:30px;
+  text-shadow:0 1px #EEE;
+}
+
+.slide p{
+  line-height:1.2;
+  margin-bottom:10px;
+}
+
+.slide1 a{color:#688B32;}
+
+.fragancias .content img:first-child{
+  float:left;
+  margin-right:20px;
+}
+
+.fragancias .content img:last-child{
+  float:right;
+  margin-left:30px;
+}
+
+.fragancias .main{
+  float:left;
+  margin-top:40px;
+  width:290px;
+}
+
+.fragancias h2,
+.fragancias .subheading{
+  color:#0096D8;
+  font-size:45px;
+}
+
+.fragancias .subheading{
+  font-family:'SpringLPStdRegular', Georgia, Times, Times New Roman, serif;
+  font-size:24px;
+}
+
+.fragancias .main p{
+  line-height:1.4;
+}
+
+/* Sidebar
+============================================================ */
+#sidebar{
+  float:right;
+  width:260px;
+}
+
+.subnav{
+  font-family:'SpringLPStdRegular', Georgia, Times, Times New Roman, serif;
+  font-size:21px;
+  margin:-30px 0 35px;
+  overflow:hidden;
+}
+
+.subnav li{
+  float:left;
+  margin-left:10px;
+  padding-left:15px;
+}
+
+.subnav a{
+  color:#3F6CA5;
+  float:left;
+  padding:5px 15px 5px 0;
+  text-decoration:none;
+}
+
+.subnav li.active{background:url(../images/bg/subnav-l.png) no-repeat left;}
+
+.subnav .active a{
+  background:url(../images/bg/subnav-r.png) no-repeat right;
+  color:#FFF;
+}
+
+#sidebar .search{margin-bottom:24px;}
+#sidebar .search .text{width:150px;}
+
+.widget h4{
+  border-bottom:1px solid #CCC;
+  color:#333;
+  font-size:16px;
+  margin-bottom:10px;
+  padding-bottom:10px;
+}
+
+.widget{
+  font-size:12px;
+  line-height:2em;
+  margin-bottom:30px;
+}
+
+.widget li a{color:#666;}
+
+/* Footer
+============================================================ */
+#footer{
+  background:url(../images/bg/footer.png) no-repeat top;
+  color:#7BB7D8;
+  font-size:12px;
+  margin:0 auto;
+  padding:90px 0 120px;
+  text-align:center;
+  width:930px;
+}
+
+#footer li{display:inline;}
+
+#footer a{
+  color:#7BB7D8;
+  text-decoration:none;
+}
+
+#footer nav{
+  font-family:'SpringLPStdRegular', Georgia, Times, Times New Roman, serif;
+  font-size:20px;
+  margin:25px 0 35px;
+}
+
+#footer nav li{
+  border-right:1px solid #7BB7D8;
+  margin-right:10px;
+  padding-right:10px;
+}
+
+#footer nav li:last-child{
+  border:0 none;
+  margin:0;
+  padding:0;
+}
+
+#footer .social-media li{
+  margin:0 15px;
+}
+
+/* Forms
+============================================================ */
+.text{
+  background:#FFF;
+  border:1px solid #CCC;
+  -moz-box-shadow:1px 1px 5px rgba(0,0,0,0.15) inset;
+  -webkit-box-shadow:1px 1px 5px rgba(0,0,0,0.15) inset;
+  box-shadow:1px 1px 5px rgba(0,0,0,0.15) inset;
+  padding:8px;
+}
+
+/* Tables
+============================================================ */
+
+/* Columns
+============================================================ */
+.c425{width:425px;}
+
+/* Buttons
+============================================================ */
+.btn{
+  background:url(../images/bg/btn-l.png) no-repeat left;
+  cursor:pointer;
+  display:inline-block;
+  padding-left:9px;
+  text-decoration:none;
+}
+
+.btn span,
+.btn input{
+  background:url(../images/bg/btn-r.png) no-repeat right;
+  border:0 none;
+  color:#FFF;
+  cursor:pointer;
+  padding:9px 18px 9px 9px;
+}

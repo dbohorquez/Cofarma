@@ -1,0 +1,18 @@
+!!! 5
+%html.no-js{:lang => "es"}
+
+  = partial "head"
+
+  <!--[if lte IE 7 ]> <body class="ie8 ie7"> <![endif]-->
+  <!--[if IE 8 ]> <body class="ie8"> <![endif]-->
+  <!--[if (gte IE 9)|!(IE)]><!--> <body> <!--<![endif]-->
+  #wrapper
+    = partial "header"
+
+    #content.clearfix
+      = yield
+    
+  = partial "footer"
+  
+  = partial "scripts"
+  </body>
